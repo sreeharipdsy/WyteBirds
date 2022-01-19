@@ -329,10 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: none;
-}
-#hero .container {
-  padding-top: 72px;
+  background: rgba(0, 0, 0, 0.050);
 }
 #hero h1 {
   margin: 0 0 10px 0;
@@ -382,9 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-watch-video:hover i {
   color: #47b2e4;
 }
-#hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
+
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
@@ -451,7 +446,7 @@ section {
 }
 
 .section-bg {
-  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0.050)
 }
 
 .section-title {
@@ -465,7 +460,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #000000;
+  color: #002A62;
 }
 .section-title h2::before {
   content: "";
@@ -483,7 +478,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #7e7e7e;
+  background: #FF6A00;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -728,39 +723,39 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 10px 10px 1px rgba(136, 136, 136, 0.075), 0px -5px 10px rgba(136, 136, 136, 0.075);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: #fff;
+  background: #ffffff;
 }
 .services .icon-box .icon {
   margin-bottom: 10px;
 }
 .services .icon-box .icon i {
-  color: #47b2e4;
+  color: #003796;
   font-size: 36px;
   transition: 0.3s;
 }
 .services .icon-box h4 {
-  font-weight: 500;
+  font-weight: 800;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 30px;
 }
 .services .icon-box h4 a {
-  color: #37517e;
+  color: #FF6A00;
   transition: ease-in-out 0.3s;
 }
 .services .icon-box p {
+  color: #002A62;
   line-height: 24px;
+  font-weight: 900;
   font-size: 14px;
   margin-bottom: 0;
 }
 .services .icon-box:hover {
   transform: translateY(-10px);
 }
-.services .icon-box:hover h4 a {
-  color: #47b2e4;
-}
+
 
 /*--------------------------------------------------------------
 # Cta
