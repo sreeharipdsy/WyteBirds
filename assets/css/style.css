@@ -150,12 +150,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: bold;
-  color: #FF6A00;
+  color: #002A62;
   white-space: nowrap;
   transition: 0.3s;
 }
 .navbar a:focus {
-  color: #002A62;
+  color: #FF6A00;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #002A62;
+  color: #FF6A00;
   transition: 0.3s ease;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
@@ -255,14 +255,17 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+.navbar{
+  text-align: center;
+}
 .navbar-mobile {
+  height: 270px;
   position: fixed;
   overflow: hidden;
   top: 0;
   right: 0;
-  left: 0;
+  left: 150px;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.747);
   transition: 0.3s;
   z-index: 999;
 }
@@ -279,12 +282,13 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  border-radius: 10px;
-  background-color: #fff;
+  border: 1px solid rgba(0, 54, 99, 0.192);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a, .navbar-mobile a:focus { 
   padding: 10px 20px;
   font-size: 15px;
   color: #000000;
@@ -315,9 +319,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
-}
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #47b2e4;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -1196,9 +1197,11 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background: #006eff11
+}
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-bottom: 3px solid #002A62;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1206,11 +1209,11 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #47b2e4;
+  color: #002A62;
   float: left;
   width: 44px;
   height: 44px;
-  background: #e7f5fb;
+  background: #f1f6fa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1222,13 +1225,13 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: #002A62;
 }
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: #001b49b9;
 }
 .contact .info .email p {
   padding-top: 5px;
@@ -1255,19 +1258,15 @@ section {
   color: #fff;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #47b2e4;
+  background: #002A62;
   color: #fff;
 }
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-bottom: 3px solid #002A62;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
 }
 .contact .php-email-form .validate {
   display: none;
@@ -1322,28 +1321,31 @@ section {
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
-  border-radius: 4px;
+  font-size: 15px;
+  border-radius: 1px;
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #47b2e4;
+  border-color: #002A62;
 }
 .contact .php-email-form input {
-  height: 44px;
+  height: 35px;
 }
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+  padding: 0px 0px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #47b2e4;
-  border: 0;
-  padding: 12px 34px;
-  color: #fff;
+  background: #c9eeff49;
+  border: 2px solid #002A62;
+  font-weight: 600;
+  padding: 12px 35px;
+  margin-top: 20px;
+  color: #002A62;
   transition: 0.4s;
   border-radius: 50px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #209dd8;
+  color: white;
+  background: #002A62;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1404,14 +1406,12 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #006eff11
 }
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f3f5fa;
   text-align: center;
   font-size: 15px;
-  color: #444444;
 }
 #footer .footer-newsletter h4 {
   font-size: 24px;
@@ -1419,7 +1419,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: #002A62;
 }
 #footer .footer-newsletter form {
   margin-top: 30px;
@@ -1440,22 +1440,24 @@ section {
   top: 0;
   right: 0;
   bottom: 0;
-  border: 0;
+  border: 2px solid #002A62;
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #47b2e4;
-  color: #fff;
+  background: #002a621c;
+  color: #002A62;
+  font-weight: bold;
   transition: 0.3s;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #209dd8;
+  color: white;
+  font-weight: 700;
+  background: #002A62;
 }
 #footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fff;
+  padding: 60px 0 0px 0;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1473,7 +1475,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
-  color: #5e5e5e;
+  color: #002A62;
 }
 #footer .footer-top h4 {
   font-size: 16px;
@@ -1492,7 +1494,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #47b2e4;
+  color: #FF6A00;
   font-size: 18px;
   line-height: 1;
 }
@@ -1505,20 +1507,20 @@ section {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #002A62;
+  font-family: "Jost", sans-serif;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: #47b2e4;
+  text-decoration: underline;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #47b2e4;
-  color: #fff;
+  background: #002A62;
+  color: white;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1529,28 +1531,31 @@ section {
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
-  color: #fff;
+  background: white;
+  color: #002A62;
   text-decoration: none;
 }
 #footer .footer-bottom {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 #footer .copyright {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
   float: left;
 }
 #footer .credits {
   float: right;
-  font-size: 13px;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
 }
 #footer .credits a {
   transition: 0.3s;
 }
 @media (max-width: 768px) {
   #footer .footer-bottom {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
   }
   #footer .copyright, #footer .credits {
