@@ -31,17 +31,17 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+ 
 }
 
 #preloader:before {
-  content: "";
+  content: url("../img/Wyte\ Birds.png");
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border: 6px solid #002A62;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: rgb(0, 0, 0);
+  color: #002A62 ;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -259,10 +259,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .navbar-mobile {
-  height: 270px;
+  line-height: 0;
+  height: 275px;
   position: fixed;
   overflow: hidden;
-  top: 0;
+  top: 15px;
   right: 0;
   left: 150px;
   bottom: 0;
@@ -283,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border: 1px solid rgba(0, 54, 99, 0.192);
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: rgb(255, 255, 255);
   overflow-y: auto;
   transition: 0.3s;
@@ -291,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus { 
   padding: 10px 20px;
   font-size: 15px;
-  color: #000000;
+  color: #002A62;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   font-weight: 900;
@@ -762,34 +763,34 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(29, 43, 68, 0.76)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
 .cta h3 {
-  color: #fff;
-  font-size: 28px;
+  color: #FF6A00;
+  font-size: 35px;
   font-weight: 700;
 }
 .cta p {
+  font-family: "Jost", sans-serif;
   color: #fff;
 }
 .cta .cta-btn {
   font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
   display: inline-block;
-  padding: 12px 40px;
+  padding: 5px 15px;
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  background: #fff;
+  border: 2px solid #ffffff;
+  color: #002A62;
 }
 .cta .cta-btn:hover {
-  background: #47b2e4;
-  border: 2px solid #47b2e4;
+  color: #FF6A00;
 }
 @media (max-width: 1024px) {
   .cta {
@@ -971,7 +972,7 @@ section {
   font-size: 15px;
   padding-bottom: 10px;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
 }
 .team .member span::after {
   content: "";
@@ -1334,7 +1335,7 @@ section {
   padding: 0px 0px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #c9eeff49;
+  background: #c9eeff21;
   border: 2px solid #002A62;
   font-weight: 600;
   padding: 12px 35px;
