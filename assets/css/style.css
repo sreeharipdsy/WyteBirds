@@ -20,9 +20,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Jost", sans-serif;
 }
 
+.loader{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader > img {
+  width: 100px;
+}
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /*--------------------------------------------------------------
 # Preloader
---------------------------------------------------------------*/
+--------------------------------------------------------------
 #preloader {
   position: fixed;
   top: 0;
@@ -65,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+}*/
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -382,6 +407,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #47b2e4;
 }
 
+@media (min-width: 1024px) {
+  .sectionFirst{
+    margin-top: 100px;
+  }
+}
+@media (min-width: 770px) {
+  .sectionFirst{
+    margin-top: 130px;
+  }
+}
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
@@ -400,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
   }
   #hero h2 {
@@ -1481,7 +1516,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  color: #002A62;
   position: relative;
   padding-bottom: 12px;
 }
