@@ -98,23 +98,22 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 10px;
+  bottom: 10px;
   z-index: 996;
-  background: #47b2e4;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+  background: #01214d;
+  width: 35px;
+  height: 35px;
+  border-radius: 0px;
   transition: all 0.4s;
 }
 .back-to-top i {
-  font-size: 24px;
+  font-size: 25px;
   color: #fff;
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #6bc1e9;
-  color: #fff;
+  background: #002a6279;;
 }
 .back-to-top.active {
   visibility: visible;
