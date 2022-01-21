@@ -283,11 +283,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .navbar-mobile {
-  line-height: 0;
-  height: 275px;
+  line-height: 1.2;
+  height: 250px;
   position: fixed;
   overflow: hidden;
-  top: 15px;
+  top: 5px;
   right: 0;
   left: 150px;
   bottom: 0;
@@ -1354,13 +1354,13 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 15px;
-  border-radius: 1px;
+  border: 2px solid #002a622d;
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   border-color: #002A62;
 }
 .contact .php-email-form input {
-  height: 35px;
+  height: 40px;
 }
 .contact .php-email-form textarea {
   padding: 0px 0px;
@@ -1370,7 +1370,7 @@ section {
   border: 2px solid #002A62;
   font-weight: 600;
   padding: 12px 35px;
-  margin-top: 20px;
+  margin-top: 15px;
   color: #002A62;
   transition: 0.4s;
   border-radius: 50px;
